@@ -19,7 +19,9 @@ public class Mission extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private Integer point;
+
     private LocalDate dueDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
